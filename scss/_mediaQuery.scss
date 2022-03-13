@@ -1,0 +1,45 @@
+/* Inicio de media Query Celular */
+/* Inicio de query pantallas de 1280px a 1400px */
+@media (min-width: 1280px) and (max-width:  1500px) {
+    .btn-flotante {
+        font-size: 14px;
+        padding: 6px 19px;
+        margin-bottom: 12vh;
+        bottom: 19px;
+        right: 19px;
+        }    
+        #menuNav{
+            margin: 2vh;
+        }
+        #Enunciado{
+            text-align: ubicacion;
+        }
+    }
+@media (min-width: 360px) and (max-width: 784px) {
+    .menureceta__img {
+        width: 7vh;
+        height: 7vh;
+        margin-left: 0vh;
+        margin-bottom: 10%;
+        border: 10px;
+        border-radius: 50%;
+        object-fit: cover;
+        box-shadow: 4px 6px 16px 3px rgba(82, 64, 64, 0.45);
+    }
+    #MenuBar{
+    display:none;
+    }   
+    #container {
+    height: 45vh;
+    }
+    .btn-flotante {
+        font-size: 14px;
+        padding: 6px 10px;
+        bottom: 10px;
+        right: 10px;
+        }
+    .main_textoNosotros{
+        font-size:x-small;
+    }  
+     /* pagina contactos */    
+}

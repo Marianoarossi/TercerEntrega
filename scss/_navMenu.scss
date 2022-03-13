@@ -1,0 +1,15 @@
+.grid {
+    display: flex;
+    align-items: $ubicacion;
+    justify-content: $ubicacion;
+    margin-bottom: 2vh;
+}
+.nav__logo{
+    width: 64px;
+    height: 64px;
+    &:hover{
+        transform: scale(1.2);
+        transition: all 0.6s ease-in-out;
+    }
+}
+

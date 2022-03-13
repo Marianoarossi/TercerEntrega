@@ -1,0 +1,20 @@
+/*Menú de pagina Index  */
+
+.menureceta__img {
+    width: 15vh;
+    height: 15vh;
+    margin-top: 2%;
+    margin-left: 3vh;
+    margin-bottom: 10%;
+    border: 10px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 4px 6px 16px 3px rgba(82, 64, 64, 0.45);
+    &:hover {
+        transform: scale(1.2);
+        transition: all 0.5s ease-in-out;
+    }
+}
+/* Fin de menú index */
+
+

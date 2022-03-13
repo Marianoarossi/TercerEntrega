@@ -1,0 +1,169 @@
+/*Importacion de partials*/
+@import"variables";
+@import "generales";
+@import "_fuentes";
+@import "navMenu";
+@import "menu";
+@import "botonFlotante";
+@import "_social";
+@import "footer";
+@import "mediaQuery";
+
+/*modificacion de clase de bootstrap */ 
+.card {
+    justify-content: $ubicacion;
+    align-items: $ubicacion;
+    margin-top: 5%;
+	.div__linkVideo {
+    width: 75%;
+    height: 50vh;
+    align-items: $ubicacion;
+	}
+	.div__listaIngredientes {
+    color: $colorFuente;
+	}
+}
+
+/* Pagina Receta (se saca estilo de la lista) */
+.sinEstilo{
+    list-style: none;
+    text-decoration: underline;
+}
+
+
+/* Pagina Galeria */
+.animacionLogo:hover {
+    animation-duration: 5s;
+    animation-name: animLogo;
+    animation-iteration-count: infinite;
+    transition: 1.5s;
+    transform:rotate3d();
+    border-radius: 70%;
+}
+
+@keyframes animLogo{
+    from {
+        -webkit-transform: rotate(0deg);
+        transform: rotateY(0deg);
+    }
+    50%{
+        -webkit-transform: rotate(180deg);
+        transform: rotateY(180deg);
+    } to {
+        -webkit-transform: rotate(360deg);
+        transform: rotateY(360deg);
+        }
+}
+/* fin pag galeria */
+
+/* Pag nosotros */
+
+//usando anidamiento
+.main__fondoNosotros {
+    background-image: url(../img/FondoNosotros1.jpg);
+    background-size: cover;
+    background-position: $ubicacion;
+	.main_textoNosotros {
+		text-align: $ubicacion;
+		margin-left: 15%;
+		margin-right: 25%;
+		margin-bottom: 10px;
+		list-style: $sinVineta;
+	}
+}
+//Extend
+.textosweb{
+    font-size: 20px;
+    color:$colorFuente;
+    text-align:justify;
+}
+.textoUbicanos{
+    @extend .textosweb;
+    font-size: 14px;
+    margin-right: 8vh;
+    margin-left: 4vh;   
+    text-align: $ubicacion;
+}
+/* pag contacto */
+//Mixins 
+@mixin configAltoAncho{
+    width: 64px;
+    height: 64px;
+}
+.TamañoIco {
+@include configAltoAncho;
+}
+.mapa__link {
+    width:45vh;
+    height:45vh;
+    text-align: $ubicacion;
+    margin-top: 10px;
+    margin-bottom: 5px;        
+}
+//usando nesting 
+.formulario{
+    margin-right: 4vh;
+    .tituloFormulario {
+        margin-top: 30px;
+        margin-right: 4vh;
+        text-align: $ubicacion;
+    }
+    .tabla__form {
+        text-align: $ubicacion;
+        margin-left: auto;
+        margin-right: auto;
+        background-attachment: fixed;
+        background-image: url(../img/formulario.jpg);
+        background-size: 100% 100%;
+        color: blanchedalmond;
+    }
+    
+
+}
+#container {
+    background-image: url(../img/newsletter.png);
+    box-shadow: 0 15px 30px 1px rgba(128, 128, 128, 0.31);
+    text-align: $ubicacion;
+    border-radius: $cienpx - 95;
+    margin: 3em auto;
+    height: 40vh;
+    width: 100%;
+    padding: 2em;
+}
+.titulo {
+    font-family: themillon;
+    color: $colorFuente;
+    text-align: $ubicacion;
+    font-size: $cienpx - 40;
+    margin-top: auto;
+	.titulo_p{
+    color:$colorFuente ;
+    font-size: large;
+	}
+}
+hr {
+    margin-left: 25%;
+    margin-right: 25%;
+    color: $colorLinea;
+}
+.email{
+    margin-bottom: $cienpx - 95;
+}
+h4 {
+    margin-top: 2%;
+    margin-bottom: 2rem;
+    text-decoration: underline;
+    color:$colorFuente;
+    font-size: larger;
+}
+.h4--modificador{
+    margin-top: 3vh;
+    margin-left: 4vh;
+    margin-bottom: 4vh;
+    text-align: left;
+    text-decoration: none;
+}
+
+
+
+

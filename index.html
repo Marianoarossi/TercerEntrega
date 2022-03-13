@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Recetas - Inicio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="shortcut icon" href="./img/cocina.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="description"
+        content="Mirá todas las recetas que tenemos para vos. Las mejores comidas, entradas y postres explicadas por los qeu saben. MisRecetas.com">
+    <meta name="keywords" content="RECETAS, COMIDA, CARNE, PIZZAS, PASTAS, SALUDABLE, PASTELERIA, COSAS RICAS, GOURMET, COCINAR, POSTRES">
+</head>
+<body>
+    <!-- Barra de navegacion Header -->
+    <header>
+        <nav id="Inicio" class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"> <img class="nav__logo" src="./img/cocina.png" alt=""> Mis
+                    Recetas</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Recetas
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="./pages/recetas.html#Carnes">Carnes</a></li>
+                                <li><a class="dropdown-item" href="./pages/recetas.html#Pastas">Pastas</a></li>
+                                <li><a class="dropdown-item" href="./pages/recetas.html#Pizzas">Pizzas</a></li>
+                                <li><a class="dropdown-item" href="./pages/recetas.html#Pasteleria">Pasteleria</a></li>
+                                <li><a class="dropdown-item" href="./pages/recetas.html#Saludables">Saludables</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/galeria.html">Galeria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/contacto.html">Contactos</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!--Carusel de fotos  -->
+        <div class="grid mt-4">
+            <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false"
+                data-bs-interval="false">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./img/c-1.jpg" class="img-fluid" alt="foto1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/s-1.jpg" class="img-fluid" alt="foto2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img//s-3.jpg" class="img-fluid" alt="foto3">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <!-- menú de atajo a recetas por seccion -->
+        <div id="MenuBar" class="container mt-5">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5">
+                <div class="col">
+                    <a class="nav__links" href="pages/recetas.html#Carnes">
+                        <img class="menureceta__img" src="./img/menuCarnes.jpg" alt="Menu Carne">
+                    </a>
+                </div>
+                <div class="col">
+                    <a class="nav__links" href="pages/recetas.html#Pizzas">
+                        <img class="menureceta__img" src="./img/menuPizzas.jpg" alt="Menu Pizzas">
+                    </a>
+                </div>
+                <div class="col">
+                    <a class="nav__links" href="pages/recetas.html#Pastas">
+                        <img class="menureceta__img" src="./img/menuPastas.jpg" alt="Menu Pastas">
+                    </a>
+                </div>
+                <div class="col">
+                    <a class="nav__links" href="pages/recetas.html#Pasteleria">
+                        <img class="menureceta__img" src="./img/menuPasteleria.jpg" alt="Menu Pasteleria">
+                    </a>
+                </div>
+                <div class="col">
+                    <a class="nav__links" href="pages/recetas.html#Saludable">
+                        <img class="menureceta__img" src="./img/menuSaludable.jpg" alt="Menu Saludables">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <!-- recetas destacadas agregadas por links a videos y -->
+        <div>
+            <h1 class="titulo">Recetas para el Invierno </h1>
+        </div>
+        <div class="card-group">
+            <div class="card">
+                <iframe class="div__linkVideo" src="https://www.youtube.com/embed/EcSVS4oqwcI"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <div class="card-body">
+                    <h4>Ingredientes para casuela para 4 personas</h4>
+                    <ul class="div__listaIngredientes">
+                        <Li>800g de carne de ternera</Li>
+                        <Li>1 cebolla</Li>
+                        <Li>2 dientes de ajo</Li>
+                        <Li>2 zanahorias</Li>
+                        <Li>3 patatas</Li>
+                        <Li>200g de tomate triturado</Li>
+                        <Li>200ml de vino tinto</Li>
+                        <Li>200ml de caldo</Li>
+                        <Li>1 cucharadita de tomillo</Li>
+                        <Li>sal y pimienta</Li>
+                        <Li>aceite de oliva</Li>
+                    </ul>
+                    <p class="card-text"><small class="text-muted">Subido recientemente</small></p>
+                </div>
+            </div>
+            <div class="card">
+                <iframe class="div__linkVideo" src="https://www.youtube.com/embed/k8v5-gQIPAU"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <div class="card-body">
+                    <h4>Ingredientes para 24 medialunas o cruasanes</h4>
+                    <ul class="div__listaIngredientes">
+                        <Li>550 g de harina de trigo común</Li>
+                        <Li>140 g de azúcar</Li>
+                        <Li>130 g de mantequilla (manteca)</Li>
+                        <Li>1 huevo</Li>
+                        <Li>100 ml de agua templada</Li>
+                        <Li>100 ml de leche templada</Li>
+                        <Li>25 g de levadura fresca o 10 g de levadura seca</Li>
+                        <Li>1 cucharada de vainilla</Li>
+                        <Li>5 g de sal (un pellizco)</Li>
+                        <Li>1 huevo para pintar</Li>
+                        <Li>Azúcar glass</Li>
+                    </ul>
+                    <p class="card-text"><small class="text-muted">Subido recientemente</small></p>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <!-- seccion de suscripcion  -->
+        <div id="container">
+            <h4 class="titulo">Suscribite</h4>
+            <p class="titulo_p">Recibi todas nuestras recetas en un newsletter</p>
+            <form>
+                <input class="email" type="email" placeholder="Ingresá tú Email" required>
+                <br>
+                <button class="button btn btn-outline-danger">Suscribirse</button>
+            </form>
+        </div>
+        <hr>
+        <!-- Botón para subir al inicio -->
+        <a href="#Inicio" class="btn-flotante">Inicio</a>
+    </main>
+    <!-- Inicio del footer -->
+    <footer class="container">
+        <div class="row">
+            <div class="col-sm">
+                <a class="footer__linkRedes" target="_blank" href="./index.html"><img class="footer__bannerLogo"
+                        src="./img/Logo_MisRecetas.png" alt="Logo de mis recetas"></a>
+            </div>
+            <div class="col-sm">
+                <ul class="footer__lista">
+                    <li>
+                        <p>www.misrecetas.com.ar</p>
+                    </li>
+                    <li class="footer__itemsL">
+                        <p>Copyrigth by Mariano Rossi</p>
+                    </li>
+                    <li>
+                        2022
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm">
+                <ul class="footer__lista">
+                    <li class="footer__itemsL">
+                        <p class="parrafoSeguinos">Seguinos en nuestras redes!</p>
+                    </li>
+                    <li class="ListaRED">
+                        <ul class="footer__listaRedes">
+                            <li class="footer__itemsL">
+                                <a class="footer__Lred" target="_blank" href="https://www.facebook.com/">
+                                    <img class="footer__logoRedes" src="./icons/facebooko.png"
+                                        alt="Link a Facebook"></a>
+                            </li>
+                            <li class="footer__itemsL">
+                                <a class="footer__Lred" target="_blank" href="https://www.youtube.com/"><img
+                                        class="footer__logoRedes" src="./icons/youtubeo.png" alt="Link a YouTube"></a>
+                            </li>
+                            <li class="footer__itemsL">
+                                <a class="footer__linkRedes" target="_blank" href="https://www.instagram.com/"><img
+                                        class="footer__logoRedes" src="./icons/instagramo.png"
+                                        alt="Link a instagram"></a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+</body>
+</html>
