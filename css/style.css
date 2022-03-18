@@ -126,6 +126,9 @@
 .ListaRED {
   list-style: none; }
 
+.pexel {
+  font-size: 5px; }
+
 /* Inicio de media Query Celular */
 /* Inicio de query pantallas de 1280px a 1400px */
 @media (min-width: 1280px) and (max-width: 1500px) {
