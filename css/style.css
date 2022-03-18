@@ -127,7 +127,7 @@
   list-style: none; }
 
 .pexel {
-  font-size: 5px; }
+  font-size: 7%; }
 
 /* Inicio de media Query Celular */
 /* Inicio de query pantallas de 1280px a 1400px */
@@ -178,7 +178,7 @@
   .card .div__listaIngredientes {
     color: #ff7f50; }
 
-/* Pagina Receta (se saca estilo de la lista) */
+/* Pagina Receta (saca estilo de la lista) */
 .sinEstilo {
   list-style: none;
   text-decoration: underline; }
